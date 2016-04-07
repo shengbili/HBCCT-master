@@ -1,0 +1,111 @@
+//
+//  MovieFans-PrefixHeader.pch
+//  MovieFans
+//
+//  Created by 晨曦 on 16/1/7.
+//  Copyright © 2016年 joker. All rights reserved.
+//
+
+#ifndef MovieFans_PrefixHeader_pch
+#define MovieFans_PrefixHeader_pch
+
+/** 尺寸相关*/
+// 屏幕宽度
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+// 屏幕高度
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+//主创图片tag
+#define CREATOR_IMAGEVIEW_TAG 10
+
+/** 三方库*/
+#import <AFNetworking.h>
+#import <KVNProgress.h>
+#import <SVProgressHUD.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+#import <JSAnimatedImagesView.h>
+#import <BmobSDK/Bmob.h>
+
+#define USER_REFRESH_NOTICE @"UserRefreshNotice"
+
+
+//热映
+#define MV_HOT @"http://ting.weibo.com/movieapp/rank/hot"
+
+//预告：
+#define MV_ADVANCE @"http://ting.weibo.com/movieapp/rank/coming"
+
+//电影详情
+#define MV_DETAIL @"http://ting.weibo.com/movieapp/page/base"
+
+//演员详情  artist_id
+#define MV_ACTOR @"http://ting.weibo.com/movieapp/profile/creator"
+
+//代表作品 artist_id  count  page
+#define MV_ACTOR_MOVIE @"http://ting.weibo.com/movieapp/profile/creatorfilms"
+
+//剧照
+#define MV_PHOTOS @"http://ting.weibo.com/movieapp/page/photos"
+
+//长评   film_id  page  count
+#define MV_LONGREVIEW @"http://ting.weibo.com/movieapp/page/longreview"
+
+//长评详情  type:long  long_show   mid_userID_filmID_score  3930911768711830_2143550005_172358_8  
+#define MV_LONGREVIEW_DETAIL @"http://ting.weibo.com/movieapp/feed/show"
+
+//短评 count film_id page      第二页开始  since_id
+#define MV_SHORTREVIEW @"http://ting.weibo.com/movieapp/page/shortreview"
+
+
+//热门影评 count type=1
+#define MV_HOT_REVIEW @"http://ting.weibo.com/movieapp/feed/list"
+//第二页热评  ids
+#define MV_HOT_REVIEW_MORE @"http://ting.weibo.com/movieapp/feed/showbatch"
+
+//影单： count 10  page
+#define MV_LIST @"http://ting.weibo.com/movieapp/Pagelist/recommend"
+
+//影单每一行 page count id type
+#define MV_LIST_EVERYPATH @"http://ting.weibo.com/movieapp/Pagelist/recommendmovie"
+
+//影单详情引导页面 id
+#define MV_LIST_DETAIL_GUIDE @"http://ting.weibo.com/movieapp/Pagelist/page"
+
+
+//搜索页面  search_key  page  count
+#define MV_SEARCH @"http://ting.weibo.com/movieapp/search/search"
+
+//筛选页面 country type year count page
+#define MV_CLASSIFY @"http://ting.weibo.com/movieapp/search/film"
+
+
+
+
+//相对iphone6 屏幕比
+#define KWidth_Scale    [UIScreen mainScreen].bounds.size.width/375.0f
+
+
+#define BIGIMAGEVIEW_HEIGHT SCREEN_HEIGHT-160
+
+/** 字体相关*/
+
+// 用户名字体大小（微博正文也是这个）
+#define WB_FONT_USERNAME [UIFont systemFontOfSize:16]
+
+// 微博发布时间字体大小(来源也是用这个)
+#define WB_FONT_TIME [UIFont systemFontOfSize:13]
+
+
+/** 间距*/
+
+// 普通间距
+#define WB_SPACING_NORMAL 10
+
+// 较小的间距
+#define WB_SPACING_SMALL 5
+
+#define PIC_SMALL 2
+
+#endif /* MovieFans_PrefixHeader_pch */
